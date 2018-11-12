@@ -42,11 +42,34 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ChessPieces\BishopPiece.cs" />
+    <Compile Include="ChessPieces\ChessPiece.cs" />
+    <Compile Include="ChessPieces\ChessPieceFactory.cs" />
+    <Compile Include="ChessPieces\KingPiece.cs" />
+    <Compile Include="ChessPieces\KnightPiece.cs" />
+    <Compile Include="ChessPieces\PawnPiece.cs" />
+    <Compile Include="ChessPieces\QueenPiece.cs" />
+    <Compile Include="ChessPieces\RookPiece.cs" />
+    <Compile Include="Walker\DisabledButtonRule.cs" />
+    <Compile Include="Layout\DialLayout.cs" />
+    <Compile Include="Layout\LayoutPosition.cs" />
+    <Compile Include="MathUtils\Matrix.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Walker\SkipButtonRule.cs" />
+    <Compile Include="Walker\Walker.cs" />
+    <Compile Include="Walker\WalkRule.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="layout.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="rules.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
